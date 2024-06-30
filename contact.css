@@ -1,0 +1,141 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.contact-main{
+	height: 80vh;
+	text-align: center;
+	background-color: #b92222;
+	color: white;
+	position: relative;
+
+}
+.contact-text {
+position: absolute;
+top: 20%;
+left: 30%;
+padding:1rem;
+}
+
+
+.contact-text h3{
+	font-size: 3rem;
+}
+.contact-text h2{
+	font-size: 6rem;
+	font-weight: 1400;
+}
+	.contact-section {
+		padding: 2rem 1rem;
+		background-color: #f4f4f4;
+		width: 100%;
+}
+
+.contact-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+
+}
+
+.contact-info, .contact-form {
+		background-color: #fff;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2 {
+		margin-bottom: 1rem;
+		color: #333;
+}
+
+.contact-details p {
+		margin: 0.5rem 0;
+}
+
+.contact-details p i {
+		margin-right: 0.5rem;
+		color: #ff5722;
+}
+
+.form-group {
+		margin-bottom: 1rem;
+}
+
+.form-group label {
+		display: block;
+		margin-bottom: 0.5rem;
+		color: #333;
+}
+
+.form-group input, .form-group textarea {
+		width: 100%;
+		padding: 0.5rem;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+}
+
+.btn {
+		background-color: #ff5722;
+		color: #fff;
+		padding: 0.75rem 1.5rem;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+}
+
+.btn:hover {
+		background-color: #e64a19;
+}
+
+hr{
+	width: 100%;
+	color: red;
+}
+
+
+@media (max-width: 768px) {
+.contact-text{
+padding-top: 10%;
+	text-align:center;
+	position:static;
+	
+}
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+	.navbar .nav-links {
+			display: none;
+			flex-direction: column;
+			width: 100%;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			/* background-color: #df2727; */
+			background-color: #b92222;
+	}
+
+	.navbar .nav-links li {
+			margin-top: 10px;
+			text-align: center;
+	}
+
+	.navbar .menu-toggle {
+			display: flex;
+	}
+
+	.navbar .nav-links.show {
+			display: flex;
+	}
+}
+
